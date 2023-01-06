@@ -176,6 +176,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        WPPConnectTeam\Wppconnect\WppconnectServiceProvider::class,
+
 
     ],
 
@@ -192,6 +194,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // ...
+        'Wppconnect' => WPPConnectTeam\Wppconnect\Facades\Wppconnect::class
     ])->toArray(),
 
 ];
